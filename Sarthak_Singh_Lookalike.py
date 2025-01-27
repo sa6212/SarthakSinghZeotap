@@ -21,7 +21,7 @@ customer_ids = customers['CustomerID'].values
 customer_id_to_index = {id: idx for idx, id in enumerate(customer_ids)}
 
 lookalike_data = {}
-for cust_id in customer_ids[:20]:  # Restrict to C0001–C0020
+for cust_id in customer_ids[:20]:
     idx = customer_id_to_index[cust_id]
 
     similarity_scores = list(enumerate(similarity_matrix[idx]))
