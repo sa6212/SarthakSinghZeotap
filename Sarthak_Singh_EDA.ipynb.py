@@ -15,7 +15,6 @@ print(products.head())
 print("\nTransactions Dataset:")
 print(transactions.head())
 
-# Check for missing values
 print("\nMissing Values:")
 print("Customers:", customers.isnull().sum())
 print("Products:", products.isnull().sum())
@@ -78,6 +77,5 @@ plt.ylabel('Number of Transactions')
 plt.grid()
 plt.show()
 
-# Save the cleaned and merged dataset
 merged_data.to_csv('Cleaned_Merged_Data.csv', index=False)
 print("\nCleaned merged dataset saved as 'Cleaned_Merged_Data.csv'")
